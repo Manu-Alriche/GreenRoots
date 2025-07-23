@@ -1,0 +1,16 @@
+node_modules
+.env
+public/images/arbres/tree-*
+!public/images/arbres/123456789.jpg
+!public/images/arbres/242668654.jpg
+!public/images/arbres/445339852.jpg
+!public/images/arbres/445632894.jpg
+!public/images/arbres/458632178.jpg
+!public/images/arbres/712256968.jpg
+!public/images/arbres/894651320.jpg
+!public/images/arbres/987654321.jpg
+!public/images/arbres/699956231.jpg
+!public/images/arbres/100256955.jpg
+!public/images/arbres/225647895.jpg
+!public/images/arbres/665899923.jpg
+!public/images/arbres/777745621.jpg

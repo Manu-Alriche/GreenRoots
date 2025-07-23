@@ -1,0 +1,127 @@
+### Obtenir tous les arbres
+GET http://localhost:3000/produits
+
+### Creation d'un tree
+POST http://localhost:3000/produits
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJpYXQiOjE3NTE2MTc1ODIsImV4cCI6MTc1MTYxODQ4Mn0.Otd2SHiaGK85Orw_7YElzmOo_EbW_4kKrxesJ-yn3_s
+
+{
+    "name": "youhou",
+    "description": "un arbre qui pousse vite",
+    "price": 100,
+    "imageUrl": "https://example.com/tree.jpg",
+    "stock": 10
+}
+
+### Upadate d'un tree
+PATCH http://localhost:3000/produits/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJpYXQiOjE3NTE2MTc1ODIsImV4cCI6MTc1MTYxODQ4Mn0.Otd2SHiaGK85Orw_7YElzmOo_EbW_4kKrxesJ-yn3_s
+
+
+{
+    "name": "test update",
+    "description": "un arbre test",
+    "price": 200,
+    "imageUrl": "https://example.com/tree.jpg",
+    "stock": 25
+}
+
+### Suppression d'un tree
+DELETE http://localhost:3000/produits/6
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJpYXQiOjE3NTE2MTc1ODIsImV4cCI6MTc1MTYxODQ4Mn0.Otd2SHiaGK85Orw_7YElzmOo_EbW_4kKrxesJ-yn3_s
+
+
+### Création d'une commande
+POST http://localhost:3000/commandes
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "items": [
+    {
+      "treeId": 1,
+      "quantity": 2
+    },
+    {
+      "treeId": 2,
+      "quantity": 1
+    },
+    {
+      "treeId": 3,
+      "quantity": 25
+    }
+  ]
+}
+
+### Création d'un compte registration
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+    "firstName": "Test",
+    "lastName": "User",
+    "email": "user233@gmail.com",
+    "password": "user222222"
+}
+
+### Se connecter avec un compte existant
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "email": "john@greenroots.com",
+    "password": "password"
+}
+
+### me
+GET http://localhost:3000/auth/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE3NTE2MTgyNzEsImV4cCI6MTc1MTYxOTE3MX0.xx3JHdSfDKehNZrQobd66w28GS9HlgD4KrBzIPTFjDU
+
+### Récupérer toutes les commandes d'un utilisateur
+GET http://localhost:3000/commandes
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE3NTE2MTgyNzEsImV4cCI6MTc1MTYxOTE3MX0.xx3JHdSfDKehNZrQobd66w28GS9HlgD4KrBzIPTFjDU
+
+### Récupérer une commande par sa référence
+GET http://localhost:3000/commandes/7458364562
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE3NTE2MTgyNzEsImV4cCI6MTc1MTYxOTE3MX0.xx3JHdSfDKehNZrQobd66w28GS9HlgD4KrBzIPTFjDU
+
+### envoyer un email de contact
+POST http://localhost:3000/contact
+Content-Type: application/json
+
+{
+    "prenom": "John Doe",
+    "nom": "Doe",
+    "email": "hugodantas33@gmail.com",
+    "content": "Bonjour, j'ai une question concernant votre service."
+}
+
+
+
+### Test simple password reset
+POST http://localhost:3000/password-reset/request
+Content-Type: application/json
+
+{
+    "email": "hugodantas33@gmail.com"
+}
+
+### ⚠️ REMPLACE 'TOKEN_RECU_PAR_EMAIL' par le token reçu dans ton email
+GET http://localhost:3000/password-reset/verify/0ee6311dadbf78a40f3aad8be9839720de8bc590d3d6c927a831eca6e268e8ea
+
+
+### reset du password
+POST http://localhost:3000/password-reset/reset
+Content-Type: application/json
+
+{
+    "token": "0ee6311dadbf78a40f3aad8be9839720de8bc590d3d6c927a831eca6e268e8ea",
+    "newPassword": "nouveaumotdepasse1234"
+}
+
+
+
+
+

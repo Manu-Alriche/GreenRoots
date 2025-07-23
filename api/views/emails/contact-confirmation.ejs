@@ -1,0 +1,85 @@
+<!-- views/emails/contact-confirmation.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            line-height: 1.6; 
+            color: #333; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #f5f5f5;
+        }
+        .container { 
+            max-width: 600px; 
+            margin: 20px auto; 
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .header { 
+            background: linear-gradient(135deg, #16a085, #27ae60); 
+            color: #333; 
+            padding: 40px 20px; 
+            text-align: center;
+        }
+        .header h2 {
+            margin: 0;
+            font-size: 26px;
+            font-weight: 600;
+        }
+        .content { 
+            padding: 40px 30px;
+            text-align: center;
+        }
+        .highlight { 
+            color: #16a085; 
+            font-weight: 600;
+        }
+        .message {
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        .signature {
+            font-size: 18px;
+            color: #16a085;
+            font-weight: 600;
+            margin: 20px 0;
+        }
+        .footer { 
+            text-align: center; 
+            padding: 30px 20px;
+            background: #f8f9fa;
+            color: #666; 
+            border-top: 1px solid #e9ecef;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>🌱 Merci pour votre message !</h2>
+        </div>
+        <div class="content">
+            <div class="message">
+                <p>Bonjour <span class="highlight"><%= userName %></span>,</p>
+                
+                <p>Nous avons bien reçu votre message et nous vous remercions de nous avoir contactés.</p>
+                
+                <p>Notre équipe vous répondra dans les <span class="highlight">24 heures</span> suivantes.</p>
+            </div>
+            
+            <div class="signature">
+                L'équipe GreenRoots 🌳
+            </div>
+        </div>
+        <div class="footer">
+            <p><strong>GreenRoots</strong> - Agissez pour la planète, un arbre à la fois</p>
+        </div>
+    </div>
+</body>
+</html>

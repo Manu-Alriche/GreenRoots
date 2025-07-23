@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            line-height: 1.6; 
+            color: #333; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #f5f5f5;
+        }
+        .container { 
+            max-width: 600px; 
+            margin: 20px auto; 
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .header { 
+            background: linear-gradient(135deg, #16a085, #27ae60); 
+            color: rgb(0, 0, 0); 
+            padding: 40px 20px; 
+            text-align: center;
+        }
+        .header h2 {
+            margin: 0;
+            font-size: 26px;
+            font-weight: 600;
+        }
+        .content { 
+            padding: 40px 30px;
+            text-align: center;
+        }
+        .message {
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+        .button-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .verify-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #16a085, #27ae60) !important;
+            color: rgb(0, 0, 0) !important;
+            padding: 18px 35px !important;
+            text-decoration: none !important;
+            border-radius: 30px !important;
+            font-weight: 700 !important;
+            font-size: 16px !important;
+            border: none !important;
+            box-shadow: 0 4px 15px rgba(22, 160, 133, 0.3) !important;
+            transition: transform 0.2s ease !important;
+        }
+        .verify-button:hover {
+            transform: translateY(-2px) !important;
+            box-shadow: 0 6px 20px rgba(22, 160, 133, 0.4) !important;
+        }
+        .welcome-box {
+            background: linear-gradient(135deg, #e8f8f5, #d1f2eb);
+            border: 1px solid #a7f3d0;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 25px 0;
+            text-align: left;
+        }
+        .security-notice {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 25px 0;
+            font-size: 14px;
+            text-align: left;
+        }
+        .footer { 
+            text-align: center; 
+            padding: 30px 20px;
+            background: #f8f9fa;
+            color: #666; 
+            border-top: 1px solid #e9ecef;
+            font-size: 14px;
+        }
+        .highlight {
+            color: #16a085;
+            font-weight: 600;
+        }
+        .backup-link {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 20px 0;
+            font-size: 12px;
+            word-break: break-all;
+        }
+        .backup-link a {
+            color: #16a085;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>🌱 Bienvenue chez GreenRoots !</h2>
+            <p style="margin: 10px 0 0 0; opacity: 0.9;">Vérifiez votre email pour commencer</p>
+        </div>
+        <div class="content">
+            <div class="welcome-box">
+                <h3 style="color: #16a085; margin-top: 0;">🎉 Félicitations <%= userName %> !</h3>
+                <p style="margin-bottom: 0;">
+                    Votre compte GreenRoots a été créé avec succès ! 
+                    Vous êtes maintenant prêt à contribuer à la reforestation de notre planète.
+                </p>
+            </div
+            <div class="message">
+                <p><strong>Une dernière étape :</strong> Nous devons vérifier votre adresse email pour sécuriser votre compte.</p>
+                
+                <p><strong>Cliquez sur le bouton ci-dessous pour confirmer votre email :</strong></p>
+            </div>
+            
+            <div class="button-container">
+                <a href="<%= verificationUrl %>" class="verify-button">
+                    ✅ Vérifier mon email
+                </a>
+            </div>
+            
+            <div class="security-notice">
+                <strong>📧 À propos de cette vérification :</strong><br>
+                • Ce lien expire dans <span class="highlight">24 heures</span><br>
+                • Vous ne pourrez pas vous connecter tant que votre email n'est pas vérifié<br>
+                • Cette étape protège votre compte contre les utilisations non autorisées
+            </div>
+            
+            <div class="backup-link">
+                <strong>Si le bouton ne fonctionne pas</strong>, copiez et collez ce lien dans votre navigateur :<br>
+                <a href="<%= verificationUrl %>"><%= verificationUrl %></a>
+            </div>
+        </div>
+        <div class="footer">
+            <p><strong>GreenRoots</strong> - Merci de rejoindre notre mission ! 🌳</p>
+            <p>🌱 Agissez pour la planète, un arbre à la fois</p>
+        </div>
+    </div>
+</body>
+</html>
