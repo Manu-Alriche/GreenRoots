@@ -8,7 +8,8 @@
     "dev": "nodemon --ignore client app.js",
     "db:create": "node migrations/createTables.js",
     "db:seed": "node migrations/seedTables.js",
-    "db:reset": "npm run db:create && npm run db:seed"
+    "db:reset": "npm run db:create && npm run db:seed",
+    "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js"
   },
   "author": "",
   "license": "ISC",
@@ -30,6 +31,7 @@
     "stripe": "^18.3.0"
   },
   "devDependencies": {
+    "jest": "^30.0.5",
     "nodemon": "^3.1.10"
   }
 }
