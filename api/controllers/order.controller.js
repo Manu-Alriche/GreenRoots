@@ -60,11 +60,11 @@ export async function getByReference(req, res) {
 }
 
 export async function createOrder(user, items, clientInfo = {}) {
-  const { firstName, lastName, localisation, note } = clientInfo;
+  const { firstname, lastname, localisation, note } = clientInfo;
   const order = await Order.create({
     user_id: user.id,
-    firstName,
-    lastName,
+    firstname,
+    lastname,
     localisation,
     note,
   });
@@ -76,7 +76,7 @@ export async function createOrder(user, items, clientInfo = {}) {
     await OrderItem.create({
       order_id: order.id,
       tree_id: tree.id,
-      quantity
+      quantity,
     });
     await tree.update({ stock: tree.stock - quantity });
     total += tree.price * quantity;
@@ -87,7 +87,7 @@ export async function createOrder(user, items, clientInfo = {}) {
 
 export async function create(req, res) {
   try {
-    const { userId, items, firstName, lastName, localisation, note } = req.body;
+    const { userId, items, firstname, lastname, localisation, note } = req.body;
 
     if (!userId || !Array.isArray(items)) {
       return res
@@ -114,8 +114,8 @@ export async function create(req, res) {
     });
 
     const order = await createOrder(user, mappedItems, {
-      firstName,
-      lastName,
+      firstname,
+      lastname,
       localisation,
       note,
     });

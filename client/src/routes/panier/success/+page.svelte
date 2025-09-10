@@ -143,12 +143,12 @@
 									<span>Informations client</span>
 								</h3>
 								<div class="space-y-2 text-sm">
-									<p><span class="font-medium">Email:</span> {orderDetails.customer_email}</p>
+									<p><span class="font-medium">Email :</span> {orderDetails.customer_email}</p>
 									{#if orderDetails.metadata}
-										<p><span class="font-medium">Nom:</span> {orderDetails.metadata.firstName} {orderDetails.metadata.lastName}</p>
-										<p><span class="font-medium">Localisation:</span> {orderDetails.metadata.localisation}</p>
+										<p><span class="font-medium">Nom :</span> {orderDetails.metadata.firstName} {orderDetails.metadata.lastName}</p>
+										<p><span class="font-medium">Localisation :</span> {orderDetails.metadata.localisation}</p>
 										{#if orderDetails.metadata.note}
-											<p><span class="font-medium">Note:</span> {orderDetails.metadata.note}</p>
+											<p><span class="font-medium">Note :</span> {orderDetails.metadata.note}</p>
 										{/if}
 									{/if}
 								</div>

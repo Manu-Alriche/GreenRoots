@@ -7,44 +7,46 @@ function generateReference() {
 
 export class Tree extends Model {}
 
-Tree.init({
-  reference: {
-    type: DataTypes.STRING(8),
-    allowNull: false,
-    unique: true,
-    defaultValue: generateReference
-  },
-  name: DataTypes.STRING,
-  description: DataTypes.TEXT,
-  price: DataTypes.FLOAT,
-  stock: {
-    type: DataTypes.INTEGER,
-    allowNull: false,
-    defaultValue: 0,
-    validate: {
-      min: 0
-    }
-  },
-  status: {
-    type: DataTypes.ENUM('active', 'inactive'),
-    allowNull: false,
-    defaultValue: 'active'
-  },
-  deactivatedAt: {
+Tree.init(
+  {
+    reference: {
+      type: DataTypes.STRING(8),
+      allowNull: false,
+      unique: true,
+      defaultValue: generateReference,
+    },
+    name: DataTypes.STRING,
+    description: DataTypes.TEXT,
+    price: DataTypes.FLOAT,
+    stock: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      defaultValue: 0,
+      validate: {
+        min: 0,
+      },
+    },
+    status: {
+      type: DataTypes.ENUM("active", "inactive"),
+      allowNull: false,
+      defaultValue: "active",
+    },
+    deactivated_at: {
       type: DataTypes.DATE,
-      allowNull: true
+      allowNull: true,
+    },
+    image_url: DataTypes.STRING,
   },
-  imageUrl: DataTypes.STRING
-}, {
-  sequelize,
-  tableName: "tree",
-  scopes: {
+  {
+    sequelize,
+    tableName: "tree",
+    scopes: {
       active: {
-        where: { status: 'active' }
+        where: { status: "active" },
       },
       inactive: {
-        where: { status: 'inactive' }
-      }
-    }
-});
-
+        where: { status: "inactive" },
+      },
+    },
+  }
+);

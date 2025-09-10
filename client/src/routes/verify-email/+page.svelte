@@ -27,7 +27,7 @@
 			if (res.ok) {
 				success = true;
 				userEmail = data.user?.email || '';
-				userName = `${data.user?.firstName || ''} ${data.user?.lastName || ''}`.trim();			
+				userName = `${data.user?.firstname || ''} ${data.user?.lastname || ''}`.trim();			
 				setTimeout(() => {
 					goto('/connexion');
 				}, 5000);

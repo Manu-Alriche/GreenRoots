@@ -76,7 +76,7 @@
 		<nav class="mb-8 max-w-6xl mx-auto">
 			<ol class="flex items-center space-x-2 text-sm text-gray-600">
 				<li><a href="/" class="hover:text-green-600 transition-colors">Accueil</a></li>
-				<li class="text-gray-400">›</li>
+				<li class="text-gray-400"></li>
 				<li class="text-gray-800 font-medium">Mon Profil</li>
 			</ol>
 		</nav>
@@ -121,7 +121,7 @@
 												</svg>
 												<span class="text-sm font-semibold text-gray-600">Nom complet</span>
 											</div>
-											<p class="text-lg font-bold text-gray-800">{$user.firstName} {$user.lastName}</p>
+											<p class="text-lg font-bold text-gray-800">{$user.firstname} {$user.lastname}</p>
 										</div>
 
 										<div class="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-2xl p-6 border border-blue-100">

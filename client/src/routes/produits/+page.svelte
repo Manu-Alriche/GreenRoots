@@ -247,7 +247,7 @@
 
 						<!-- Image container -->
 						<div class="relative overflow-hidden rounded-t-3xl {tree.status === 'inactive' ? 'opacity-60' : ''}">
-							<img src="{import.meta.env.VITE_API_URL}/images/arbres/{tree.imageUrl}" alt={tree.name} class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700"/>
+							<img src="{import.meta.env.VITE_API_URL}/images/arbres/{tree.image_url}" alt={tree.name} class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700"/>
 							<div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 						</div>
 
@@ -332,7 +332,7 @@
 					<div class="group bg-white/80 backdrop-blur-sm rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-white/20 hover:scale-105 hover:-translate-y-2 relative">
 						<!-- Version SSR sans éléments dynamiques -->
 						<div class="relative overflow-hidden rounded-t-3xl">
-							<img src="{import.meta.env.VITE_API_URL}/images/arbres/{tree.imageUrl}" alt={tree.name} class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700"/>
+							<img src="{import.meta.env.VITE_API_URL}/images/arbres/{tree.image_url}" alt={tree.name} class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700"/>
 							<div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 						</div>
 

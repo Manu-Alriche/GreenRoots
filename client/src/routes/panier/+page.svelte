@@ -172,7 +172,7 @@
 										<!-- Product Info -->
 										<div class="flex items-center space-x-6">
 											<div class="relative">
-												<img src="{import.meta.env.VITE_API_URL}/images/arbres/{item.imageUrl}" alt={item.name} class="w-20 h-20 object-cover rounded-xl shadow-md"/>
+												<img src="{import.meta.env.VITE_API_URL}/images/arbres/{item.image_url}" alt={item.name} class="w-20 h-20 object-cover rounded-xl shadow-md"/>
 												<div class="absolute -top-2 -right-2 bg-green-500 text-white text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center">
 													{item.quantity}
 												</div>

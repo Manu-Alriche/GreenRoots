@@ -110,7 +110,7 @@
 			<div class="relative group flex">
 				<div class="bg-white/80 backdrop-blur-sm rounded-3xl shadow-2xl overflow-hidden border border-white/20 p-8 flex-1 flex flex-col">
 					<div class="flex-1 min-h-[400px] overflow-hidden rounded-2xl"> <!-- Conteneur avec hauteur fixe -->
-						<img src="{import.meta.env.VITE_API_URL}/images/arbres/{tree.imageUrl}" alt={tree.name} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"/>
+						<img src="{import.meta.env.VITE_API_URL}/images/arbres/{tree.image_url}" alt={tree.name} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"/>
 					</div>
 					
 					<!-- Le reste de votre code pour le badge et l'admin... -->

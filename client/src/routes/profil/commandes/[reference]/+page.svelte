@@ -225,8 +225,8 @@
 
 					<div class="bg-white/80 backdrop-blur-sm rounded-3xl shadow-lg border border-white/20 overflow-hidden mt-8 p-6">
 						<h3 class="text-xl font-bold text-gray-800 mb-4">Informations client</h3>
-						<p><span class="font-semibold">Nom :</span> {order.lastName}</p>
-						<p><span class="font-semibold">Prénom :</span> {order.firstName}</p>
+						<p><span class="font-semibold">Nom :</span> {order.lastname}</p>
+						<p><span class="font-semibold">Prénom :</span> {order.firstname}</p>
 						<p><span class="font-semibold">Localisation :</span> {order.localisation}</p>
 						<p><span class="font-semibold">Note :</span> {order.note}</p>
 					</div>

@@ -3,7 +3,7 @@
 	export let isAdmin = false;
 	export let index = 0;
 
-	const imageUrl = `${import.meta.env.VITE_API_URL}/images/arbres/${tree.imageUrl}`;
+	const imageUrl = `${import.meta.env.VITE_API_URL}/images/arbres/${tree.image_url}`;
 </script>
 
 <div class="group relative">

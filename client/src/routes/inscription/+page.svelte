@@ -27,8 +27,8 @@
 				method: 'POST',
 				headers: { 'Content-Type': 'application/json' },
 				body: JSON.stringify({
-					firstName: prenom,
-					lastName: nom,
+					firstname: prenom,
+					lastname: nom,
 					email,
 					password
 				})

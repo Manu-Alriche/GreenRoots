@@ -31,7 +31,7 @@
                     Chaque graine que vous achetez est un pas vers un avenir durable. Une partie de nos bénéfices est directement réinvestie dans des projets de reforestation communautaires, en partenariat avec des ONG locales.</p><br>
                     <p>Nous croyons aussi que l’impact commence par la connaissance. C’est pourquoi notre site n’est pas seulement une boutique, mais aussi un espace de sensibilisation, où vous pouvez apprendre, comprendre, et agir.</p><br>
                     <p>Ensemble, faisons germer l’espoir. Une graine à la fois.</p><br>
-                    <a href="/contact" class="btn btn-primary">Nous contacter</a>
+					<a href="/contact" class="px-4 py-2 bg-gradient-to-r from-green-600 to-emerald-600 text-white rounded-xl font-semibold hover:from-green-700 hover:to-emerald-700 transition-all duration-300 shadow-lg hover:shadow-xl">Nous contacter</a>
 				</div>
 			</div>
 		</div>

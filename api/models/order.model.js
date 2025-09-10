@@ -9,20 +9,20 @@ function generateReference() {
 
 Order.init(
   {
-    firstName: DataTypes.STRING,
-    lastName: DataTypes.STRING,
+    firstname: DataTypes.STRING,
+    lastname: DataTypes.STRING,
     localisation: DataTypes.STRING,
     note: DataTypes.TEXT,
     total: DataTypes.FLOAT,
     status: {
       type: DataTypes.STRING,
-      defaultValue: 'pending',
-      allowNull: false
+      defaultValue: "pending",
+      allowNull: false,
     },
-    stripeSessionId: {
+    stripe_session_id: {
       type: DataTypes.STRING,
       allowNull: true,
-      unique: true
+      unique: true,
     },
     reference: {
       type: DataTypes.STRING(10),

@@ -22,16 +22,16 @@ const customerRole = await Role.create({ name: "customer" });
 
 console.log("🚧 Création users...");
 const adminUser = await User.create({
-  firstName: "Alice",
-  lastName: "Root",
+  firstname: "Alice",
+  lastname: "Root",
   email: "admin@greenroots.com",
   password: await scrypt.hash("admin123"),
   role_id: adminRole.id,
 });
 
 const johnUser = await User.create({
-  firstName: "John",
-  lastName: "Doe",
+  firstname: "John",
+  lastname: "Doe",
   email: "john@greenroots.com",
   password: await scrypt.hash("password"),
   role_id: customerRole.id,
@@ -71,8 +71,8 @@ const oak = await Tree.create({
     "Le chêne est un arbre robuste aux feuilles lobées, apprécié pour son bois dur et ses glands nourrissant la faune.",
   price: 29.99,
   stock: 20,
-  imageUrl: "987654321.jpg",
-  status: "active"
+  image_url: "987654321.jpg",
+  status: "active",
 });
 
 const maple = await Tree.create({
@@ -82,9 +82,8 @@ const maple = await Tree.create({
     "L'érable est un arbre aux feuilles lobées qui changent de couleur en automne, célèbre pour sa sève sucrée utilisée pour le sirop d'érable.",
   price: 39.99,
   stock: 15,
-  imageUrl: "123456789.jpg",
-  status: "inactive", // Arbre inactif
-  deactivatedAt: new Date()
+  image_url: "123456789.jpg",
+  status: "active",
 });
 
 const dragon = await Tree.create({
@@ -94,8 +93,8 @@ const dragon = await Tree.create({
     "Le dragonnier de Socotra a l'allure d'un grand parasol qui lorsqu'il est âgé peut atteindre la hauteur de 12 m avec une grosse tige robuste et un houppier très dense de tiges et de feuilles en forme de lance.",
   price: 199.99,
   stock: 5,
-  imageUrl: "242668654.jpg",
-  status: "active"
+  image_url: "242668654.jpg",
+  status: "active",
 });
 
 const bao = await Tree.create({
@@ -105,8 +104,8 @@ const bao = await Tree.create({
     "Le Baobab est un arbre africain à caudex. Sacré pour plusieurs cultures, c'est aussi un arbre à palabres qu'il est malvenu ou sacrilège de couper.",
   price: 89.99,
   stock: 10,
-  imageUrl: "458632178.jpg",
-  status: "active"
+  image_url: "458632178.jpg",
+  status: "active",
 });
 
 const seq = await Tree.create({
@@ -116,8 +115,8 @@ const seq = await Tree.create({
     "Endémique des montagnes de la Sierra Nevada en Californie, le Séquoia géant comprend les arbres les plus grands du monde en volume.",
   price: 99.99,
   stock: 10,
-  imageUrl: "445632894.jpg",
-  status: "active"
+  image_url: "445632894.jpg",
+  status: "active",
 });
 
 const ginkgo = await Tree.create({
@@ -127,8 +126,8 @@ const ginkgo = await Tree.create({
     "Le Ginkgo, aussi appelé arbre aux quarante écus, arbre aux mille écus, ou encore arbre aux abricots d'argent. En Chine, certains spécimens de cet arbre auraient une durée de vie excédant les 3 000 ans et plus de 100 individus auraient plus de 1 000 ans",
   price: 79.99,
   stock: 10,
-  imageUrl: "445339852.jpg",
-  status: "inactive"
+  image_url: "445339852.jpg",
+  status: "inactive",
 });
 
 const ban = await Tree.create({
@@ -138,8 +137,8 @@ const ban = await Tree.create({
     "Le Banian est un arbre imposant pouvant atteindre 25 m de haut au feuillage persistant avec une couronne largement déployée et de nombreuses racines adventives. Celles-ci poussent des branches vers la terre et peuvent former une véritable petite forêt.",
   price: 89.99,
   stock: 10,
-  imageUrl: "712256968.jpg",
-  status: "active"
+  image_url: "712256968.jpg",
+  status: "active",
 });
 
 const pine = await Tree.create({
@@ -149,8 +148,8 @@ const pine = await Tree.create({
     "Le sapin est un conifère à aiguilles persistantes, souvent utilisé comme arbre de Noël et apprécié pour son bois et sa résine.",
   price: 29.99,
   stock: 30,
-  imageUrl: "894651320.jpg",
-  status: "active"
+  image_url: "894651320.jpg",
+  status: "active",
 });
 
 const cherry = await Tree.create({
@@ -160,8 +159,8 @@ const cherry = await Tree.create({
     "Le cerisier est un arbre fruitier à fleurs blanches ou roses, apprécié pour ses fruits sucrés et son aspect ornemental au printemps.",
   price: 49.99,
   stock: 30,
-  imageUrl: "699956231.jpg",
-  status: "active"
+  image_url: "699956231.jpg",
+  status: "active",
 });
 
 const mango = await Tree.create({
@@ -171,8 +170,8 @@ const mango = await Tree.create({
     "Le manguier est un arbre tropical à feuillage dense, connu pour ses fruits juteux et sucrés, les mangues.",
   price: 39.99,
   stock: 30,
-  imageUrl: "100256955.jpg",
-  status: "active"
+  image_url: "100256955.jpg",
+  status: "active",
 });
 
 const litchee = await Tree.create({
@@ -182,8 +181,8 @@ const litchee = await Tree.create({
     "Le litchi est un arbre fruitier tropical, connu pour ses fruits sucrés et juteux, recouverts d'une peau rugueuse et rose.",
   price: 59.99,
   stock: 30,
-  imageUrl: "225647895.jpg",
-  status: "active"
+  image_url: "225647895.jpg",
+  status: "active",
 });
 
 const dragonfruit = await Tree.create({
@@ -193,8 +192,8 @@ const dragonfruit = await Tree.create({
     "Le pitaya, ou fruit du dragon, est le fruit de plusieurs espèces de cactus. Il est connu pour son apparence unique et ses saveurs sucrées.",
   price: 49.99,
   stock: 30,
-  imageUrl: "665899923.jpg",
-  status: "active"
+  image_url: "665899923.jpg",
+  status: "active",
 });
 
 const pokok = await Tree.create({
@@ -204,8 +203,8 @@ const pokok = await Tree.create({
     "Le mangoustanier est un arbre tropical à feuilles persistantes, connu pour ses fruits ronds et violets, le mangoustan.",
   price: 79.99,
   stock: 30,
-  imageUrl: "777745621.jpg",
-  status: "active"
+  image_url: "777745621.jpg",
+  status: "active",
 });
 
 console.log("🚧 Création orders...");
@@ -217,8 +216,8 @@ const order1 = await createOrder(
     { tree: maple, quantity: 2 },
   ],
   {
-    firstName: "John",
-    lastName: "Doe",
+    firstname: "John",
+    lastname: "Doe",
     localisation: "Paris",
     note: "Livrer en semaine",
   }
@@ -231,8 +230,8 @@ const order2 = await createOrder(
     { tree: pine, quantity: 1 },
   ],
   {
-    firstName: "Alice",
-    lastName: "Green",
+    firstname: "Alice",
+    lastname: "Green",
     localisation: "Lyon",
     note: "Le plus rapidement possible",
   }
