@@ -10,7 +10,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJpY
     "name": "youhou",
     "description": "un arbre qui pousse vite",
     "price": 100,
-    "imageUrl": "https://example.com/tree.jpg",
+    "image_url": "https://example.com/tree.jpg",
     "stock": 10
 }
 
@@ -24,7 +24,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJpY
     "name": "test update",
     "description": "un arbre test",
     "price": 200,
-    "imageUrl": "https://example.com/tree.jpg",
+    "image_url": "https://example.com/tree.jpg",
     "stock": 25
 }
 
@@ -36,13 +36,14 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJpY
 ### Création d'une commande
 POST http://localhost:3000/commandes
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE3NTc2MTg1NjAsImV4cCI6MTc1NzcwNDk2MH0.HsUFGAasOVo3yplAPbK0ahn2OpuqVeiowXocSFJJbmw
 
 {
   "userId": 1,
   "items": [
     {
       "treeId": 1,
-      "quantity": 2
+      "quantity": 1
     },
     {
       "treeId": 2,
@@ -50,7 +51,7 @@ Content-Type: application/json
     },
     {
       "treeId": 3,
-      "quantity": 25
+      "quantity": 1
     }
   ]
 }
@@ -60,8 +61,8 @@ POST http://localhost:3000/auth/register
 Content-Type: application/json
 
 {
-    "firstName": "Test",
-    "lastName": "User",
+    "firstname": "Test",
+    "lastname": "User",
     "email": "user233@gmail.com",
     "password": "user222222"
 }
