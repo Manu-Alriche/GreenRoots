@@ -6,7 +6,7 @@ GreenRoots est une plateforme e-commerce permettant aux utilisateurs d’acheter
 
 ## 🚀 Fonctionnalités principales
 
-- 🏡 **Landing page** présentant la mission GreenRoots et les arbres disponibles
+- 🏡 **Accueil** présentant la mission GreenRoots et les arbres disponibles
 - 👤 **Inscription / Connexion** avec authentification via JWT
 - 🌳 **Consultation d'arbres** disponibles à l'achat
 - 🛒 **Commande d’un arbre** (simulée dans le MVP)
@@ -22,7 +22,7 @@ GreenRoots est une plateforme e-commerce permettant aux utilisateurs d’acheter
 - [SvelteKit](https://kit.svelte.dev/) – Framework fullstack moderne
 - [Tailwind CSS](https://tailwindcss.com/) – Framework CSS utilitaire
 
-### Back-End (déployé sur [Render](https://render.com/))
+### Back-End (déployé sur [Railway](https://railway.com/))
 
 - [Node.js](https://nodejs.org/) + [Express](https://expressjs.com/)
 - [PostgreSQL](https://www.postgresql.org/) – Base de données relationnelle
@@ -35,7 +35,7 @@ GreenRoots est une plateforme e-commerce permettant aux utilisateurs d’acheter
 
 ```
 /client    → Front-end SvelteKit
-/api      → Back-end Express + PostgreSQL
+/api       → Back-end Express + PostgreSQL
 ```
 
 ---
@@ -138,7 +138,7 @@ Ce projet couvre de nombreuses compétences du métier de développeur web :
 - Développement d’une API REST sécurisée avec Express
 - Mise en place d’une authentification avec JWT
 - Organisation agile (méthode Scrum)
-<!-- - Déploiement cloud (Render / Vercel) -->
+<!-- - Déploiement cloud (Vercel / Railway) -->
 
 ---
 
