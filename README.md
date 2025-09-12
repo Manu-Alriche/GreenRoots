@@ -40,17 +40,17 @@ GreenRoots est une plateforme e-commerce permettant aux utilisateurs d’acheter
 
 ---
 
-<!-- ## 🌍 Déploiement
+## 🌍 Déploiement
 
 ### 🎯 Front : Vercel
 
-- [https://greenroots.vercel.app](https://greenroots.vercel.app)
+- [https://greenroots-flax.vercel.app/](https://greenroots-flax.vercel.app/)
 
 ### 🔗 API : Render
 
-- [https://greenroots-api.onrender.com](https://greenroots-api.onrender.com)
+- [https://greenroots-api.up.railway.app](https://greenroots-api.up.railway.app)
 
---- -->
+---
 
 ## 🧪 Lancer le projet en local
 
