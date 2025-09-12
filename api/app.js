@@ -15,11 +15,24 @@ const PORT = process.env.PORT || 3000;
 const __dirname = path.resolve();
 
 const app = express();
-const corsOption = {
-  origin: [process.env.FRONTEND_URL, "https://greenroots-flax.vercel.app"],
-};
 
-app.use(cors(corsOption));
+const allowedOrigins = [
+  process.env.FRONTEND_URL,
+  "https://greenroots-flax.vercel.app",
+];
+
+app.use(
+  cors({
+    origin: function (origin, callback) {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS: " + origin));
+      }
+    },
+    credentials: true,
+  })
+);
 
 app.use("/public", express.static(path.join(process.cwd(), "public")));
 
