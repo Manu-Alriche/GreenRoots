@@ -153,3 +153,7 @@ Merci à l’équipe pédagogique et aux collègues de formation pour les retour
 Ce projet est libre de droits dans un cadre pédagogique uniquement.
 
 ---
+
+## Résultat final
+
+![site](./figma/GreenRoots.png)
