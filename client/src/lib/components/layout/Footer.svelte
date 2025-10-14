@@ -90,6 +90,7 @@
 				<ul class="space-y-2">
 					<li><a href="/apropos" class="text-gray-300 hover:text-green-400 text-sm">À propos</a></li>
 				</ul>
+				<p>..</p>
 			</div>
 		</div>
 
